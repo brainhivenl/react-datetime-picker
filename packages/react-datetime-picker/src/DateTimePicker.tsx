@@ -378,6 +378,7 @@ const DateTimePicker: React.FC<DateTimePickerProps> = function DateTimePicker(pr
       ) as HTMLElement;
 
       if (
+        !(event instanceof FocusEvent) &&
         target &&
         wrapperEl &&
         !wrapperEl.contains(target) &&
